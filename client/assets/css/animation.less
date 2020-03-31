@@ -1,0 +1,139 @@
+@time: 0.2s;
+
+/* 自下而上 */
+.bounce-enter-active {
+  animation: bounce-in @time;
+}
+.bounce-leave-active {
+  animation: bounce-out @time;
+}
+@keyframes bounce-in {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(30%);
+    opacity: 0;
+  }
+}
+
+/* 自上而下 */
+.bounce-up-enter-active {
+  animation: bounce-up-in @time;
+}
+.bounce-up-leave-active {
+  animation: bounce-up-out @time;
+}
+@keyframes bounce-up-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes bounce-up-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* 淡出淡入 */
+.bg-enter-active {
+  animation: bg-in @time;
+}
+.bg-leave-active {
+  animation: bg-out @time;
+}
+@keyframes bg-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bg-out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 左出右进 */
+.around-enter-active {
+  animation: around-in @time;
+}
+.around-leave-active {
+  animation: around-out @time;
+}
+@keyframes around-in {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes around-out {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* 左进右出 */
+.around2-enter-active {
+  animation: around2-in @time;
+}
+.around2-leave-active {
+  animation: around2-out @time;
+}
+@keyframes around2-in {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes around2-out {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}

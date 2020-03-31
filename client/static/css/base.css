@@ -1,0 +1,92 @@
+@charset "utf-8";/* Weiwen Doctor Mobile V1 style 2014.3.6 - lz */
+/*==== Reset Begin ====*/
+html{color:#282828;background:#F2F5F8;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,button,p,blockquote,th,td{margin:0;padding:0;}
+body{font:normal normal 14px/1.5em "微软雅黑", 'Microsoft YaHei',Helvetica,Tahoma,SimSun;-webkit-text-size-adjust:none;}
+table{border-collapse:collapse;border-spacing:0;}
+header,fieldset,img{border:0;}
+input,textarea{outline:0; font-family:"微软雅黑";}
+li{list-style:none;}
+:focus{outline:0;}
+a {
+  text-decoration: none;
+  color: #32779d;
+  border: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+p{word-break:break-all;}
+.clearfix:after{content:".";clear:both;display:block;height:0;overflow:hidden;visibility:hidden;}
+.clearfix{*zoom:1}
+.fl{float:left;}
+.fr{float:right;}
+.mt10{margin-top: 10px;}
+.blank40{height: 40px;}
+/*==== Reset End ====*/
+
+.box_wrapper {
+  padding: 0 15px;
+  background-color: #fff;
+  padding-top: 1px;
+  overflow: hidden;
+}
+
+.common_hd {
+  font-size: 15px;
+  line-height: 21px;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  display: flex;
+  height: 40px;
+}
+
+.common_hd h3{
+  flex:1;
+  box-flex: 1;
+  width: 0;
+  font-weight: bold;
+}
+
+.common_hd .toMore{
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url(../../assets/images/btn_enter@2x.png) no-repeat center center;
+  background-size: 20px 20px;
+  position: relative;
+  right: -15px;
+  top: -10px;
+}
+
+/* 单行省略号 */
+.singleLine{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 文字垂直居中 */
+.vMiddle{
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -o-box;
+  -o-box-orient: horizontal;
+  -o-box-pack: center;
+  -o-box-align: center;
+  display: -ms-box;
+  -ms-box-orient: horizontal;
+  -ms-box-pack: center;
+  -ms-box-align: center;
+  box-orient: horizontal;
+  box-pack: center;
+  box-align: center;
+  display: flex;
+}
+

@@ -1,0 +1,120 @@
+@charset "utf-8";
+@import "~assets/css/config.less";
+@import "~assets/css/animation.less";
+@b:75;
+
+.container {
+  font-family:AlibabaPuHuiTi;
+  min-height: 100vh;
+  background: url("../images/dental_test_bg_01.png") no-repeat top center,url("../images/dental_test_bg_05.png") no-repeat bottom center;
+  background-size: 100% 123px,100% 92px;
+  padding: 123px 0 92px;
+  box-sizing: border-box;
+  display: flex;
+  .content-wrapper{
+    padding: 0 19px;
+    background: url("../images/dental_test_bg_03.png") repeat-y top center;
+    box-sizing: border-box;
+    width: 100%;
+    height: inherit;
+    background-size: 100%;
+  }
+  .content{
+    background:rgba(255,255,255,1);
+    border-radius:10px;
+    padding: 18px 16px 12px;
+  }
+  .question-result{
+    text-align: center;
+    padding: 0 10px;
+    .title{
+      font-size:22px;
+      font-weight:500;
+      color:rgba(51,51,51,1);
+      line-height:26px;
+      margin-bottom: 14px;
+    }
+    .desc{
+      font-size:12px;
+      font-weight:400;
+      color:rgba(51,51,51,1);
+      line-height:18px;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+    .recommend{
+      font-size:15px;
+      font-weight:500;
+      color:rgba(255,115,56,1);
+      line-height:20px;
+      margin-bottom: 17px;
+    }
+  }
+  .recommend-hospital{
+    margin-bottom: 10px;
+  }
+}
+.d-dialog{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 0 33px;
+  .d-dialog-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, .4);
+  }
+  .d-dialog-container{
+    z-index: 999;
+    background: #ffffff;
+    border-radius:14px;
+    padding: 34px 15px 44px;
+    box-sizing: border-box;
+    width: 100%;
+    .top{
+      font-size:15px;
+      font-weight:400;
+      color:rgba(255,115,56,1);
+      line-height:23px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+      .title{
+        display: flex;
+        align-items: center;
+        &:before{
+          content: "";
+          display:block;
+          width: 9px;
+          height: 9px;
+          background: url("../images/header_decoration@2x.png") no-repeat center;
+          background-size: contain;
+          margin-right: 8px;
+        }
+        &:after{
+          content: "";
+          display:block;
+          width: 9px;
+          height: 9px;
+          background: url("../images/header_decoration@2x.png") no-repeat center;
+          background-size: contain;
+          margin-left: 8px;
+        }
+      }
+    }
+    .content-form{
+    }
+  }
+}

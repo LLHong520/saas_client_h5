@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+
+<head>
+  <script>
+    ;(function () {
+      try {
+        let UA = navigator.userAgent;
+        let isIos = UA.toLowerCase().indexOf("iphone") > 0 ? true : false;
+        let isPC = window.screen.width > 780;
+        if (window.parent !== window && (isIos || isPC)) {
+          window.top.location.href = window.location.href;
+        } else {
+          console.log(window.location.href);
+        }
+      } catch (error) {
+        console.log("error");
+      }
+    })();
+  </script>
+
+  <!-- 统计 -->
+  <script type="text/javascript">
+    window._pt_lt = new Date().getTime();
+    window._pt_sp_2 = [];
+    _pt_sp_2.push("setAccount,34330049");
+    var _protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    (function() {
+      var atag = document.createElement("script"); atag.type = "text/javascript"; atag.async = true;
+      atag.src = _protocol + "js.ptengine.cn/34330049.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(atag, s);
+    })();
+  </script>
+
+  <!-- 百度统计 -->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?be80a72ce8e8dea7f5e034c8edea95c1";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+  <!-- 爱问统计 -->
+  <script>
+    var _iwenq = _iwenq || [];
+    _iwenq.push(["_belongProduct", "SQ-C-H5"]);
+    _iwenq.push(["_belongBusiness", "SQ-C-H5-001"]);
+    _iwenq.push(["_productDictId", "10"]);
+    _iwenq.push(["_belongFunctionId", "GN-001"]);
+    //引用js
+    (function () {
+      var ma = document.createElement("script");
+      ma.type = "text/javascript";
+      // ma.async = true;
+      ma.src = "//dc.chspu.com/iw/iw.0.0.9.min.js";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(ma, s);
+    })();
+    </script>
+    <!-- 爱问统计 -->
+
+  {{ HEAD }}
+</head>
+
+<body {{ BODY_ATTRS }}>
+  {{ APP }}
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+
+
+/*文章列表*/
+.articleList li {
+  border-bottom: 1px solid #EFEFEF;
+}
+
+
+
+.articleList li a{
+  display:flex;
+  padding: 15px 0;
+}
+
+.articleList li .info_wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.articleList li .tag {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-top: 5px;
+  color: #286EC2;
+  font-size: 12px;
+}
+
+.articleList li .tag span {
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 3px 8px;
+  max-width: 10em;
+  color: #999;
+  background: #F6F8FB;
+  border: 1px solid #EFF2F7;
+  border-radius: 25px;
+  line-height: normal;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
+
+/*.articleList li .tag span + span {
+  margin-left: 10px;
+}*/
+
+.articleList li .img_box{
+  width: 84px;
+  height: 84px;
+  margin-left: 20px;
+  border-radius: 4px;
+}
+.articleList li .img_box img{
+  display: block;
+  width: 84px;
+  height: 84px;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+}
+.articleList li .info{
+  flex: 1;
+  box-flex: 1;
+  overflow: hidden;
+}
+.articleList li .info dt{
+  font-size: 15px;
+  line-height: 21px;
+  height: 42px;
+  overflow: hidden;
+  color: #282828;
+}
+
+.articleList li .tit{
+  display: -webkit-box;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #282828;
+  font-size: 16px;
+}
+.articleList li .img_list{
+  display: flex;
+  margin: 0 -3px;
+  padding-top: 15px;
+}
+
+.articleList li .img_list .img_item{
+  margin: 0 3px;
+  width:33.3%;
+}
+
+.articleList li .img_list .img_item span{
+  position: relative;
+  padding-bottom: 100%;
+  width: 100%;
+  display:block;
+  border-radius: 4px;
+}
+
+.articleList li .img_list .img_item img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 4px;
+  background-color: #f6f6f6;
+}
+.articleList li .author_bar {
+  height: 22px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #999;
+  margin-top: 16px;
+}
+
+.author_bar_flex {
+  display: flex;
+}
+
+.articleList li .author_bar_flex .marks span {
+  display: inline-block;
+  padding: 0 8px;
+  border: 1px solid #EFF2F7;
+  border-radius: 24px;
+  margin-right: 10px;
+  line-height: 24px;
+  background-color: #F6F8FB;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.articleList li .author_bar_flex .marks{
+  flex: 1;
+}
+
+.articleList li .face{
+  display: block;
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.articleList li .face img{
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+}
+.articleList li .author_name{
+  float: left;
+}
+.articleList li .helpNum {
+  padding-left: 18px;
+  float: right;
+  background: url(../images/icon_good@2x.png) no-repeat left;
+  background-size: 14px;
+  color: #999;
+}
+
+.articleList li .pv {
+  margin-right: 15px;
+  padding-left: 20px  ;
+  float: right;
+  background: url(../images/icon_view@2x.png) no-repeat left;
+  background-size: 16px 14px;
+  color: #999;
+}
+
+
+.box-shadow{
+  box-shadow: 0 0 5px #ddd;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+/*帖子列表*/
+.postList li{
+  border-bottom: 1px solid #EFEFEF;
+}
+.postList li:last-child{
+  border-bottom: 0;
+}
+.postList li a{
+  display: block;
+  padding: 15px 0;
+  color: #282828;
+}
+.postList .author_bar {
+  height: 37px;
+  line-height: 22px;
+  font-size: 12px;
+  color: #999;
+  padding-bottom: 15px;
+}
+.postList li .face{
+  display: block;
+  float: left;
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+}
+.postList li .face img{
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 22px;
+}
+.postList li .author_name {
+  float: left;
+}
+
+.postList li .time {
+  float: right;
+}
+
+.postList .post_tit{
+  font-size: 15px;
+  line-height: 21px;
+
+}
+
+.postList .post_footer{
+  display: flex;
+  padding-top: 15px;
+  line-height: 26px;
+}
+.postList .post_footer .marks{
+  /* flex:1;
+  box-flex: 1;
+  width: 0; */
+  overflow: hidden;
+}
+.postList .post_footer .marks span{
+  display: inline-block;
+  padding: 0 8px;
+  border: 1px solid #EFF2F7;
+  border-radius: 24px;
+  margin-right: 10px;
+  line-height: 24px;
+  background-color: #F6F8FB;
+  white-space: nowrap;
+  font-size: 12px;
+}
+.postList .post_footer .replyNum{
+  color: #999;
+  font-size: 12px;
+}
+
+/* 相关专题列表 */
+.relativeSubject{
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.relativeSubject ul{
+  display: flex;
+  margin: 0 -7px 0 -8px;
+}
+.relativeSubject li{
+  flex: 1;
+  box-flex: 1;
+}
+.relativeSubject li a{
+  display: block;
+  margin: 0 7px 0 8px;
+}
+
+.relativeSubject li p{
+  font-size: 14px;
+  line-height: 20px;
+  color: #282828;
+  margin-top: 6px;
+  max-height: 40px;
+  overflow: hidden;
+}
+.relativeSubject li .img{
+  position: relative;
+  width: 100%;
+  height: 94px;
+}
+.relativeSubject li .img img{
+  display: block;
+  width: 100%;
+  height: 94px;
+  border-radius: 4px;
+}
+
+.relativeSubject .single li .img,
+.relativeSubject .single li .img img {
+  height: 195px;
+}
+.relativeSubject .single a{
+  position: relative;
+  display: block;
+}
+.relativeSubject .single li .shadow{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 195px;
+  border-radius: 4px;
+  margin-top: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+  opacity:0.6999;
+}
+.relativeSubject .single li p{
+  position: absolute;
+  left: 0;
+  bottom: 15px;
+  color: #fff;
+  width: 100%;
+  padding: 0 15px;
+  max-height: 40px;
+  overflow: hidden;
+}
+/* tab */
+.list_tab ul{
+  text-align: center;
+  margin: 0 -15px;
+  border-bottom: 1px solid #EFEFEF;
+}
+
+.list_tab ul li{
+  display:inline-block;
+  padding: 0 17px;
+  line-height: 45px;
+  font-size: 15px;
+  color: #999;
+  text-align: center;
+}
+.list_tab ul li.active{
+  color: #282828;
+  background: url(../../assets/images/current_line.gif) no-repeat center 40px;
+}

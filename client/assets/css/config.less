@@ -1,0 +1,54 @@
+@rem: 14px;
+@themeBg: #F2F5F8;
+@moduleBg: #F6F8FB;
+@m: 15px;
+@p: 15px;
+@p13: 13px;
+@p17: 17px;
+@br: 4px;
+@br6: 6px;
+@borderC: #EFF2F7;
+@borderC-light: #EFEFEF;
+@activeC: #2688FC;
+@activeBGC: #E9F3FF;
+@color3: #282828;
+@color6: #666;
+@color9: #999;
+@color10: #CFCFCF;
+@h3: 17px;
+@h4: 15px;
+@h5: 13px;
+@searchH: 32px;
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.color6{
+  color: @color6!important;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-overFlow(@n: 2) {
+  display: -webkit-box;
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @n;
+  overflow: hidden;//
+  text-overflow: ellipsis;
+}
+
+.text-overFlow-single{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap
+}
